@@ -3,7 +3,7 @@ return {
 		"L3MON4D3/LuaSnip",
 		dependencies = { "saadparwaiz1/cmp_luasnip", "rafamadriz/friendly-snippets" },
 	},
-	{ "hrsh7th/cmp-nvim-lsp" },
+	{ "hrsh7th/cmp-nvim-lsp", "hrsh7th/cmp-buffer", "hrsh7th/cmp-path", "hrsh7th/cmp-cmdline"},
 	{
 		"hrsh7th/nvim-cmp",
 		config = function()
@@ -28,11 +28,9 @@ return {
 					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 				}),
 				sources = cmp.config.sources({
-	        { name = "nvim_lsp" },
-          { name = "luasnip" }, -- For luasnip users.
-				}, {
-					{ name = "buffer" },
-				}),
+					{ name = "nvim_lsp" },
+					{ name = "luasnip" },
+				}, { { name = "buffer" }, { name = "pylsp" } , {name = "gci"}}),
 			})
 		end,
 	},
