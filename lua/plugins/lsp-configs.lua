@@ -23,6 +23,14 @@ return {
       })
       lspconfig.tsserver.setup({
         capabilities = capabilities,
+        on_attach = on_attach,
+        cmd = { "zls" },
+        filetypes = { "zig", "zir" },
+        root_dir = lspconfig.util.root_pattern("zls.json", "build.zig", ".git"),
+        single_file_support = true,
+      })
+      lspconfig.zls.setup({
+        capabilities = capabilities,
       })
       lspconfig.gopls.setup({
         capabilities = capabilities,
