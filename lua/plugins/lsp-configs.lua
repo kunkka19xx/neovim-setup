@@ -27,6 +27,12 @@ return {
 			lspconfig.zls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.yamlls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.tailwindcss.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 				settings = {
