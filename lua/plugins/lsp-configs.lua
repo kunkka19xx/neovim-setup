@@ -33,7 +33,7 @@ return {
 			lspconfig.tailwindcss.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.dcm.setup({
+			lspconfig.dcmls.setup({
 				capabilities = capabilities,
 			})
 
