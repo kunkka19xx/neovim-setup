@@ -7,3 +7,17 @@ https://www.nerdfonts.com/font-downloads
 ```shell
 brew install ripgrep
 ```
+- we need wget to help mason download zip,.. from internet
+
+```shell
+brew install wget
+```
+
+- Mason heathcheck
+```shell
+:h mason-requirements
+```
+
+```shell
+:checkhealth mason
+```

@@ -18,25 +18,27 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
+			-- lua
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
+			-- typescript
 			lspconfig.tsserver.setup({
 				capabilities = capabilities,
 			})
+			-- zig
 			lspconfig.zls.setup({
 				capabilities = capabilities,
 			})
+			-- yaml
 			lspconfig.yamlls.setup({
 				capabilities = capabilities,
 			})
+			-- tailwindcss
 			lspconfig.tailwindcss.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.dcm.setup({
-				capabilities = capabilities,
-			})
-
+			-- golang
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 				settings = {
@@ -53,9 +55,23 @@ return {
 					usePlaceholders = true,
 				},
 			})
-			lspconfig.pylsp.setup({
-				capabilities = capabilities,
-			})
+			lspconfig.pyright.setup({ capabilities = capabilities })
+			--java
+			--[[ lspconfig.jdtls.setup({
+				settings = {
+					java = {
+						configuration = {
+							runtimes = {
+								{
+									name = "JavaSE-17",
+									path = "/opt/jdk-17",
+									default = true,
+								},
+							},
+						},
+					},
+				},
+			}) ]]
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
