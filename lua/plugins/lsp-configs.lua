@@ -1,9 +1,9 @@
 return {
 	{
 		"williamboman/mason.nvim",
-		config = function()
-			require("mason").setup()
-		end,
+		-- config = function()
+		-- 	require("mason").setup()
+		-- end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
@@ -57,7 +57,7 @@ return {
 			})
 			lspconfig.pyright.setup({ capabilities = capabilities })
 			--java
-			--[[ lspconfig.jdtls.setup({
+			lspconfig.jdtls.setup({
 				settings = {
 					java = {
 						configuration = {
@@ -71,7 +71,7 @@ return {
 						},
 					},
 				},
-			}) ]]
+			})
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
