@@ -1,6 +1,7 @@
 {
     "diagnostics.globals": [
         "vim",
-        "on_attach"
+        "on_attach",
+        "per_filetype"
     ]
 }

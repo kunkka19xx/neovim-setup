@@ -39,22 +39,22 @@ return {
 				capabilities = capabilities,
 			})
 			-- golang
-			-- lspconfig.gopls.setup({
-			-- 	capabilities = capabilities,
-			-- 	settings = {
-			-- 		gopls = {
-			-- 			experimentalPostfixCompletions = true,
-			-- 			analyses = {
-			-- 				unusedparams = true,
-			-- 				shadow = true,
-			-- 			},
-			-- 			staticcheck = true,
-			-- 		},
-			-- 	},
-			-- 	init_options = {
-			-- 		usePlaceholders = true,
-			-- 	},
-			-- })
+			lspconfig.gopls.setup({
+				capabilities = capabilities,
+				-- settings = {
+				-- 	gopls = {
+				-- 		experimentalPostfixCompletions = true,
+				-- 		analyses = {
+				-- 			unusedparams = true,
+				-- 			shadow = true,
+				-- 		},
+				-- 		staticcheck = true,
+				-- 	},
+				-- },
+				-- init_options = {
+				-- 	usePlaceholders = true,
+				-- },
+			})
 			lspconfig.pyright.setup({ capabilities = capabilities })
 			--java
 			lspconfig.jdtls.setup({
