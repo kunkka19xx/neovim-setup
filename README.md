@@ -21,3 +21,21 @@ brew install wget
 ```shell
 :checkhealth mason
 ```
+
+create tmux config file 
+
+```shell
+touch ~/.tmux.conf
+```
+
+add setting to the file then active them
+
+```shell
+tmux source-file ~/.tmux.conf \;
+```
+
+clone tpm
+
+```shell
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
