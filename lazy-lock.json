@@ -1,6 +1,10 @@
 {
   "Comment.nvim": { "branch": "master", "commit": "e30b7f2008e52442154b66f7c519bfd2f1e32acb" },
+<<<<<<< HEAD
   "LuaSnip": { "branch": "master", "commit": "2737edc9e674e537dc0a97e3405658d57d2d31ed" },
+=======
+  "LuaSnip": { "branch": "master", "commit": "29417eea5b7c4b6beda105ced072855101d9680e" },
+>>>>>>> 15be95e (fix cpl for go)
   "arrow.nvim": { "branch": "master", "commit": "5438c977e729a29d96bd54c8da3103154e80dbd1" },
   "catppuccin": { "branch": "main", "commit": "35d8057137af463c9f41f169539e9b190d57d269" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
@@ -34,7 +38,11 @@
   "nvim-java-test": { "branch": "main", "commit": "7f0f40e9c5b7eab5096d8bec6ac04251c6e81468" },
   "nvim-lspconfig": { "branch": "master", "commit": "52302604e3c667cfdf33aadf89088e96eb3c5da3" },
   "nvim-nio": { "branch": "master", "commit": "a428f309119086dc78dd4b19306d2d67be884eee" },
+<<<<<<< HEAD
   "nvim-treesitter": { "branch": "master", "commit": "4b9a83f6017ee5edea85722cbfda1b3058a82e69" },
+=======
+  "nvim-treesitter": { "branch": "master", "commit": "7dc8aabe86db8c2f23520e8334f7584f83e84342" },
+>>>>>>> 15be95e (fix cpl for go)
   "nvim-ts-autotag": { "branch": "main", "commit": "e239a560f338be31337e7abc3ee42515daf23f5e" },
   "nvim-web-devicons": { "branch": "master", "commit": "19d257cf889f79f4022163c3fbb5e08639077bd8" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },

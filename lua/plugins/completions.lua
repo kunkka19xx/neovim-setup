@@ -36,6 +36,7 @@ return {
           { name = "pylsp" },
           { name = "gci" },
           { name = "ts_ls" },
+          { name = "gopls" },
         }),
       })
     end,
