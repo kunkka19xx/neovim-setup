@@ -15,13 +15,3 @@ vim.opt.rtp:prepend(lazypath)
 -- install plugins and options
 require("vim-options")
 require("lazy").setup("plugins")
-require("transparent").setup({
-    enable = true,
-    extra_groups = {
-        "Normal",
-        "NormalNC",
-        "TelescopeBorder",
-        "NvimTreeNormal",
-    },
-    exclude = {},
-})

@@ -7,7 +7,6 @@ return {
         "MunifTanjim/nui.nvim",
         -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     },
-    require('transparent').clear_prefix('NeoTree'),
     config = function()
         -- key map for neo tree
         vim.keymap.set("n", "<leader>v", ":Neotree filesystem reveal left<CR>", {})

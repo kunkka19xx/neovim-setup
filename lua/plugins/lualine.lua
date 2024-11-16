@@ -7,5 +7,4 @@ return {
             },
         })
     end,
-    require('transparent').clear_prefix('lualine')
 }
