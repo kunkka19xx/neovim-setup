@@ -39,3 +39,22 @@ clone tpm
 ```shell
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+
+### backup pkgs by brew
+
+```shell
+brew bundle dump --file=Brewfile --force
+```
+
+Re install again 
+
+```shell
+brew bundle --file=~/Brewfile
+```
+
+Linux 
+- skip un supported pack
+```shell
+brew bundle check --file=Brewfile
+sed -i '/cask /d' Brewfile 
+```
