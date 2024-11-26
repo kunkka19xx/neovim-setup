@@ -3,12 +3,33 @@ return {
     version = "*",
     lazy = true,
     cmd = { "TimerStart", "TimerRepeat", "TimerSession" },
+
     dependencies = {
         -- Optional, but highly recommended if you want to use the "Default" timer
         "rcarriga/nvim-notify",
         config = function()
+            local play_sound = function()
+                local home_dir = os.getenv("HOME")
+                local sound_path = home_dir .. "/.config/nvim/break.mp3"
+                vim.loop.spawn("afplay", {
+                    args = { sound_path },
+                    detached = true,
+                }, function()
+                    print("Sound finished playing")
+                end)
+
+                vim.defer_fn(function()
+                    vim.fn.system("pkill afplay")
+                    print("Sound stopped after 15 seconds")
+                end, 15000)
+            end
             require("notify").setup({
                 background_colour = "#1e1e2e",
+                on_open = function(notification)
+                    if notification then
+                        play_sound()
+                    end
+                end,
             })
             require("lualine").setup {
                 sections = {
