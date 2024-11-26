@@ -66,6 +66,6 @@ alias gr=./gradlew
 # push tmux to repo
 alias ptm='cp ~/.tmux.conf ~/.config/nvim/.tmux.conf'
 # sync from repo to sys
-alias stm='cp ~/.config/nvim/.tmux.conf ~/.tmux.conf'
+alias ctm='cp ~/.config/nvim/.tmux.conf ~/.tmux.conf'
 # source tmux
 alias stm='tmux source-file ~/.tmux.conf \;'
