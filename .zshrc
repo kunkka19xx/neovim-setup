@@ -61,3 +61,11 @@ op() {
 alias ss='source ~/.zshrc'
 alias cps='cp ~/.zshrc ~/.config/nvim/.zshrc'
 alias oh='cd ~/ && echo "Went back home"'
+alias k='kubectl'
+alias gr=./gradlew
+# push tmux to repo
+alias ptm='cp ~/.tmux.conf ~/.config/.tmux.conf'
+# copy from repo to sys
+alias ctm='cp ~/.config/.tmux.conf ~/.tmux.conf'
+# source tmux
+alias stm='tmux source-file ~/.tmux.conf \;'
