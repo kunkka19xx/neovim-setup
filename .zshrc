@@ -64,8 +64,8 @@ alias oh='cd ~/ && echo "Went back home"'
 alias k='kubectl'
 alias gr=./gradlew
 # push tmux to repo
-alias ptm='cp ~/.tmux.conf ~/.config/.tmux.conf'
-# copy from repo to sys
-alias ctm='cp ~/.config/.tmux.conf ~/.tmux.conf'
+alias ptm='cp ~/.tmux.conf ~/.config/nvim/.tmux.conf'
+# sync from repo to sys
+alias stm='cp ~/.config/nvim/.tmux.conf ~/.tmux.conf'
 # source tmux
 alias stm='tmux source-file ~/.tmux.conf \;'
