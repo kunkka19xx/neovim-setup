@@ -51,7 +51,7 @@ return {
 			-- run with debugging
 			vim.keymap.set("n", "<Leader>tb", ':lua require("neotest").run.run({strategy = "dap"})<CR>', {})
 			vim.keymap.set("n", "<Leader>ts", ':lua require("neotest").run.stop()<CR>', {})
-			vim.keymap.set("n", "<Leader>to", ':lua require("neotest").ouput.open()<CR>', {})
+			vim.keymap.set("n", "<Leader>to", ':lua require("neotest").output.open()<CR>', {})
 			-- open and jump in to the dialog
 			vim.keymap.set("n", "<Leader>tO", ':lua require("neotest").output.open({ enter = true })<CR>', {})
 			-- run all test
