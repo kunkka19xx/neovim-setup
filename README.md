@@ -46,14 +46,14 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 brew bundle dump --file=Brewfile --force
 ```
 
-Re install again 
+Re-install again 
 
 ```shell
 brew bundle --file=~/Brewfile
 ```
 
 Linux 
-- skip un supported pack
+- skip un-supported packs
 ```shell
 brew bundle check --file=Brewfile
 sed -i '/cask /d' Brewfile 
