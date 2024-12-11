@@ -1,8 +1,12 @@
+### 😂
+- Every day I am using vim, and I feel like I can learn new things every day.
+So please don't wonder or judge why this repo has many commits.
+
 ### Note:
-- need Iterm because terminal can not represent right theme
-- need set Nerd font for view icon, text, folder, ...
+- need Iterm/Wezeterm,...(not default terminal) because terminal can not represent right theme
+- need to set Nerd font for view icon, text, folder, ...
 https://www.nerdfonts.com/font-downloads
-- need install delve for debugging: `brew install delve`
+- need to install delve for debugging: `brew install delve`
 - we need ripgrep for telescope live grep
 ```shell
 brew install ripgrep
