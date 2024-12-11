@@ -79,9 +79,19 @@ return {
             vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
             vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
             vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
-            -- list all methods in a file (working with go confirmed, don't know about other)
+            -- list all methods in a file 
+            -- working with go confirmed, don't know about other, keep changing as necessary
             vim.keymap.set("n", "<leader>fm", function()
-                require("telescope.builtin").lsp_document_symbols({ symbols = "method" })
+                local filetype = vim.bo.filetype
+                local symbols_map = {
+                    python = "function",
+                    javascript = "method",
+                    typescript = "method",
+                    java = "class",
+                    lua = "function",
+                }
+                local symbols = symbols_map[filetype] or "method"
+                require("telescope.builtin").lsp_document_symbols({ symbols = symbols })
             end, {})
         end,
     },
